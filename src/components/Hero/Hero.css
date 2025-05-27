@@ -1,0 +1,81 @@
+.hero{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 35px;
+  padding: 60px 20px;
+  min-height: 100vh;
+}
+.hero h1{
+    text-align: center;
+    width: 70%;
+    font-size: 90px;
+    font-weight: 600;
+}
+.typing {
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: right;
+    /* font-size: 70px; */
+    /* font-weight: 600; */
+    /* border-right: 3px solid #000000; Creates the cursor */
+    /* width: 0; */
+    animation: typing 2.5s steps(20, end) forwards, blink 0.75s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 14ch; /* Adjust according to your text length */
+    }
+  }
+  
+.hero h1 span{
+    background: linear-gradient(270deg,#DF8908 10%,#B415FF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.hero p{
+    width: 50%;
+    text-align: center;
+    font-size: 24px;
+    line-height: 40px;
+}
+.hero-action{
+     display: flex;
+     align-items: center;
+     gap: 25px;
+     font-size: 24px;
+     font-weight: 500;
+     margin-top: 50px;
+}
+.hero-connect{
+    padding: 25px 45px;
+    border-radius: 50px;
+    background: linear-gradient(270deg,#DF8908 -5.09%,#B415FF 106.28%);
+    cursor: pointer;
+}
+.hero-resume{
+    padding: 25px 75px;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+.hero-connect:hover{
+border: 2px solid white;
+}
+.hero-resume:hover{
+     border-color: #B415FF;
+}
+@media(max-width:768px){
+    .hero-action{
+        display: flex;
+        flex-direction: column;
+    }
+    .hero h1 span{
+        font-size: 80%;
+    }
+}

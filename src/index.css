@@ -1,0 +1,17 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  height: auto;
+  background: #161513;
+  color: white;
+  font-family: 'outfit';
+  overflow-x: hidden;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+.app{
+  width: 100%;
+  overflow-x: hidden;
+}
